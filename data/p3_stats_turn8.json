@@ -1,0 +1,960 @@
+{
+  "data_source": {
+    "source": "pred",
+    "path": "data\\pred_hourly.csv",
+    "src_dates": [
+      "2023/12/1",
+      "2023/12/2",
+      "2023/12/3",
+      "2023/12/4",
+      "2023/12/5",
+      "2023/12/6",
+      "2023/12/7",
+      "2023/12/8",
+      "2023/12/9",
+      "2023/12/10",
+      "2023/12/11",
+      "2023/12/12",
+      "2023/12/13",
+      "2023/12/14",
+      "2023/12/15",
+      "2023/12/16",
+      "2023/12/17",
+      "2023/12/18",
+      "2023/12/19",
+      "2023/12/20",
+      "2023/12/21",
+      "2023/12/22",
+      "2023/12/23",
+      "2023/12/24",
+      "2023/12/25",
+      "2023/12/26",
+      "2023/12/27",
+      "2023/12/28",
+      "2023/12/29",
+      "2023/12/30"
+    ],
+    "out_dates": [
+      "2023/12/1",
+      "2023/12/2",
+      "2023/12/3",
+      "2023/12/4",
+      "2023/12/5",
+      "2023/12/6",
+      "2023/12/7",
+      "2023/12/8",
+      "2023/12/9",
+      "2023/12/10",
+      "2023/12/11",
+      "2023/12/12",
+      "2023/12/13",
+      "2023/12/14",
+      "2023/12/15",
+      "2023/12/16",
+      "2023/12/17",
+      "2023/12/18",
+      "2023/12/19",
+      "2023/12/20",
+      "2023/12/21",
+      "2023/12/22",
+      "2023/12/23",
+      "2023/12/24",
+      "2023/12/25",
+      "2023/12/26",
+      "2023/12/27",
+      "2023/12/28",
+      "2023/12/29",
+      "2023/12/30"
+    ],
+    "n_center": 57,
+    "centers": [
+      "SC1",
+      "SC2",
+      "SC3",
+      "SC4",
+      "SC5",
+      "SC6",
+      "SC7",
+      "SC8",
+      "SC9",
+      "SC10",
+      "SC12",
+      "SC14",
+      "SC15",
+      "SC16",
+      "SC17",
+      "SC18",
+      "SC19",
+      "SC20",
+      "SC21",
+      "SC22",
+      "SC23",
+      "SC24",
+      "SC25",
+      "SC26",
+      "SC27",
+      "SC28",
+      "SC29",
+      "SC30",
+      "SC31",
+      "SC32",
+      "SC34",
+      "SC35",
+      "SC36",
+      "SC37",
+      "SC38",
+      "SC39",
+      "SC40",
+      "SC41",
+      "SC43",
+      "SC44",
+      "SC46",
+      "SC47",
+      "SC48",
+      "SC49",
+      "SC51",
+      "SC52",
+      "SC53",
+      "SC54",
+      "SC55",
+      "SC56",
+      "SC57",
+      "SC58",
+      "SC60",
+      "SC61",
+      "SC63",
+      "SC66",
+      "SC68"
+    ],
+    "total_volume": 20479622.0
+  },
+  "n_center": 57,
+  "n_day": 30,
+  "n_shift": 6,
+  "n_row": 10260,
+  "total_volume": 20479622.0,
+  "person_days": 142793,
+  "formal_person_days": 55056,
+  "temp_person_days": 87737,
+  "formal_share": 38.56,
+  "temp_share": 61.44,
+  "people_per_day": 4759.77,
+  "eff_mean": 18.7913,
+  "eff_person_day": 143.42,
+  "eff_std_between_days": 2.9201,
+  "eff_min": 3.0,
+  "eff_max": 23.064,
+  "util_mean": 0.7892,
+  "util_std_mean": 0.2818,
+  "util_std_max": 0.4129,
+  "lb_pure_formal": 103258,
+  "lb_work": 102398.11,
+  "gap_pure_pct": 38.288,
+  "gap_work_pct": 39.449,
+  "n_mixed_center_day": 301,
+  "n_center_day": 1710,
+  "model": "turn8",
+  "n_hall_fail": 1379,
+  "max_backlog_end": 9065.0,
+  "days": [
+    {
+      "date": "2023/12/1",
+      "volume": 663770.0,
+      "people": 4616,
+      "formal": 1836,
+      "temp": 2780,
+      "eff": 17.9747
+    },
+    {
+      "date": "2023/12/2",
+      "volume": 672248.0,
+      "people": 4676,
+      "formal": 1826,
+      "temp": 2850,
+      "eff": 17.9707
+    },
+    {
+      "date": "2023/12/3",
+      "volume": 651804.0,
+      "people": 4536,
+      "formal": 1800,
+      "temp": 2736,
+      "eff": 17.962
+    },
+    {
+      "date": "2023/12/4",
+      "volume": 657254.0,
+      "people": 4567,
+      "formal": 1820,
+      "temp": 2747,
+      "eff": 17.9892
+    },
+    {
+      "date": "2023/12/5",
+      "volume": 691594.0,
+      "people": 4820,
+      "formal": 1851,
+      "temp": 2969,
+      "eff": 17.9355
+    },
+    {
+      "date": "2023/12/6",
+      "volume": 682326.0,
+      "people": 4761,
+      "formal": 1839,
+      "temp": 2922,
+      "eff": 17.9145
+    },
+    {
+      "date": "2023/12/7",
+      "volume": 699120.0,
+      "people": 4878,
+      "formal": 1846,
+      "temp": 3032,
+      "eff": 17.9151
+    },
+    {
+      "date": "2023/12/8",
+      "volume": 669023.0,
+      "people": 4658,
+      "formal": 1840,
+      "temp": 2818,
+      "eff": 17.9536
+    },
+    {
+      "date": "2023/12/9",
+      "volume": 677602.0,
+      "people": 4715,
+      "formal": 1829,
+      "temp": 2886,
+      "eff": 17.964
+    },
+    {
+      "date": "2023/12/10",
+      "volume": 657017.0,
+      "people": 4576,
+      "formal": 1802,
+      "temp": 2774,
+      "eff": 17.9474
+    },
+    {
+      "date": "2023/12/11",
+      "volume": 662460.0,
+      "people": 4612,
+      "formal": 1824,
+      "temp": 2788,
+      "eff": 17.9548
+    },
+    {
+      "date": "2023/12/12",
+      "volume": 697110.0,
+      "people": 4865,
+      "formal": 1855,
+      "temp": 3010,
+      "eff": 17.9114
+    },
+    {
+      "date": "2023/12/13",
+      "volume": 687777.0,
+      "people": 4798,
+      "formal": 1842,
+      "temp": 2956,
+      "eff": 17.9183
+    },
+    {
+      "date": "2023/12/14",
+      "volume": 704718.0,
+      "people": 4926,
+      "formal": 1850,
+      "temp": 3076,
+      "eff": 17.8826
+    },
+    {
+      "date": "2023/12/15",
+      "volume": 674359.0,
+      "people": 4700,
+      "formal": 1843,
+      "temp": 2857,
+      "eff": 17.9351
+    },
+    {
+      "date": "2023/12/16",
+      "volume": 683048.0,
+      "people": 4764,
+      "formal": 1832,
+      "temp": 2932,
+      "eff": 17.9221
+    },
+    {
+      "date": "2023/12/17",
+      "volume": 662303.0,
+      "people": 4613,
+      "formal": 1802,
+      "temp": 2811,
+      "eff": 17.9466
+    },
+    {
+      "date": "2023/12/18",
+      "volume": 667742.0,
+      "people": 4647,
+      "formal": 1826,
+      "temp": 2821,
+      "eff": 17.9616
+    },
+    {
+      "date": "2023/12/19",
+      "volume": 702692.0,
+      "people": 4907,
+      "formal": 1855,
+      "temp": 3052,
+      "eff": 17.9002
+    },
+    {
+      "date": "2023/12/20",
+      "volume": 693306.0,
+      "people": 4839,
+      "formal": 1844,
+      "temp": 2995,
+      "eff": 17.9093
+    },
+    {
+      "date": "2023/12/21",
+      "volume": 710400.0,
+      "people": 4969,
+      "formal": 1854,
+      "temp": 3115,
+      "eff": 17.8708
+    },
+    {
+      "date": "2023/12/22",
+      "volume": 679770.0,
+      "people": 4737,
+      "formal": 1843,
+      "temp": 2894,
+      "eff": 17.9378
+    },
+    {
+      "date": "2023/12/23",
+      "volume": 688563.0,
+      "people": 4810,
+      "formal": 1839,
+      "temp": 2971,
+      "eff": 17.894
+    },
+    {
+      "date": "2023/12/24",
+      "volume": 667664.0,
+      "people": 4660,
+      "formal": 1807,
+      "temp": 2853,
+      "eff": 17.9094
+    },
+    {
+      "date": "2023/12/25",
+      "volume": 673107.0,
+      "people": 4681,
+      "formal": 1822,
+      "temp": 2859,
+      "eff": 17.9744
+    },
+    {
+      "date": "2023/12/26",
+      "volume": 708360.0,
+      "people": 4947,
+      "formal": 1853,
+      "temp": 3094,
+      "eff": 17.8987
+    },
+    {
+      "date": "2023/12/27",
+      "volume": 698914.0,
+      "people": 4884,
+      "formal": 1847,
+      "temp": 3037,
+      "eff": 17.8878
+    },
+    {
+      "date": "2023/12/28",
+      "volume": 716163.0,
+      "people": 5008,
+      "formal": 1854,
+      "temp": 3154,
+      "eff": 17.8755
+    },
+    {
+      "date": "2023/12/29",
+      "volume": 685251.0,
+      "people": 4779,
+      "formal": 1840,
+      "temp": 2939,
+      "eff": 17.9235
+    },
+    {
+      "date": "2023/12/30",
+      "volume": 694157.0,
+      "people": 4844,
+      "formal": 1835,
+      "temp": 3009,
+      "eff": 17.9128
+    }
+  ],
+  "top_temp_days": [
+    {
+      "date": "2023/12/28",
+      "volume": 716163.0,
+      "people": 5008,
+      "formal": 1854,
+      "temp": 3154,
+      "eff": 17.8755
+    },
+    {
+      "date": "2023/12/21",
+      "volume": 710400.0,
+      "people": 4969,
+      "formal": 1854,
+      "temp": 3115,
+      "eff": 17.8708
+    },
+    {
+      "date": "2023/12/26",
+      "volume": 708360.0,
+      "people": 4947,
+      "formal": 1853,
+      "temp": 3094,
+      "eff": 17.8987
+    },
+    {
+      "date": "2023/12/14",
+      "volume": 704718.0,
+      "people": 4926,
+      "formal": 1850,
+      "temp": 3076,
+      "eff": 17.8826
+    },
+    {
+      "date": "2023/12/19",
+      "volume": 702692.0,
+      "people": 4907,
+      "formal": 1855,
+      "temp": 3052,
+      "eff": 17.9002
+    }
+  ],
+  "centers": [
+    {
+      "center": "SC1",
+      "people": 9478,
+      "person_day": 315.93,
+      "formal": 1800,
+      "temp": 7678,
+      "eff": 17.887,
+      "formal_pct": 18.99
+    },
+    {
+      "center": "SC2",
+      "people": 1318,
+      "person_day": 43.93,
+      "formal": 1260,
+      "temp": 58,
+      "eff": 21.943,
+      "formal_pct": 95.6
+    },
+    {
+      "center": "SC3",
+      "people": 2516,
+      "person_day": 83.87,
+      "formal": 1725,
+      "temp": 791,
+      "eff": 19.335,
+      "formal_pct": 68.56
+    },
+    {
+      "center": "SC4",
+      "people": 4102,
+      "person_day": 136.73,
+      "formal": 1718,
+      "temp": 2384,
+      "eff": 19.487,
+      "formal_pct": 41.88
+    },
+    {
+      "center": "SC5",
+      "people": 5278,
+      "person_day": 175.93,
+      "formal": 1800,
+      "temp": 3478,
+      "eff": 15.309,
+      "formal_pct": 34.1
+    },
+    {
+      "center": "SC6",
+      "people": 5880,
+      "person_day": 196.0,
+      "formal": 1800,
+      "temp": 4080,
+      "eff": 18.892,
+      "formal_pct": 30.61
+    },
+    {
+      "center": "SC7",
+      "people": 7036,
+      "person_day": 234.53,
+      "formal": 1800,
+      "temp": 5236,
+      "eff": 18.011,
+      "formal_pct": 25.58
+    },
+    {
+      "center": "SC8",
+      "people": 8130,
+      "person_day": 271.0,
+      "formal": 1800,
+      "temp": 6330,
+      "eff": 17.749,
+      "formal_pct": 22.14
+    },
+    {
+      "center": "SC9",
+      "people": 5624,
+      "person_day": 187.47,
+      "formal": 1800,
+      "temp": 3824,
+      "eff": 18.384,
+      "formal_pct": 32.01
+    },
+    {
+      "center": "SC10",
+      "people": 9956,
+      "person_day": 331.87,
+      "formal": 1800,
+      "temp": 8156,
+      "eff": 15.345,
+      "formal_pct": 18.08
+    },
+    {
+      "center": "SC12",
+      "people": 737,
+      "person_day": 24.57,
+      "formal": 737,
+      "temp": 0,
+      "eff": 21.621,
+      "formal_pct": 100.0
+    },
+    {
+      "center": "SC14",
+      "people": 289,
+      "person_day": 9.63,
+      "formal": 289,
+      "temp": 0,
+      "eff": 20.884,
+      "formal_pct": 100.0
+    },
+    {
+      "center": "SC15",
+      "people": 1009,
+      "person_day": 33.63,
+      "formal": 1009,
+      "temp": 0,
+      "eff": 15.903,
+      "formal_pct": 100.0
+    },
+    {
+      "center": "SC16",
+      "people": 399,
+      "person_day": 13.3,
+      "formal": 399,
+      "temp": 0,
+      "eff": 21.917,
+      "formal_pct": 100.0
+    },
+    {
+      "center": "SC17",
+      "people": 3403,
+      "person_day": 113.43,
+      "formal": 1504,
+      "temp": 1899,
+      "eff": 20.364,
+      "formal_pct": 44.2
+    },
+    {
+      "center": "SC18",
+      "people": 959,
+      "person_day": 31.97,
+      "formal": 959,
+      "temp": 0,
+      "eff": 21.849,
+      "formal_pct": 100.0
+    },
+    {
+      "center": "SC19",
+      "people": 1140,
+      "person_day": 38.0,
+      "formal": 1140,
+      "temp": 0,
+      "eff": 20.432,
+      "formal_pct": 100.0
+    },
+    {
+      "center": "SC20",
+      "people": 60,
+      "person_day": 2.0,
+      "formal": 60,
+      "temp": 0,
+      "eff": 3.877,
+      "formal_pct": 100.0
+    },
+    {
+      "center": "SC21",
+      "people": 363,
+      "person_day": 12.1,
+      "formal": 363,
+      "temp": 0,
+      "eff": 21.271,
+      "formal_pct": 100.0
+    },
+    {
+      "center": "SC22",
+      "people": 1892,
+      "person_day": 63.07,
+      "formal": 1474,
+      "temp": 418,
+      "eff": 16.748,
+      "formal_pct": 77.91
+    },
+    {
+      "center": "SC23",
+      "people": 632,
+      "person_day": 21.07,
+      "formal": 632,
+      "temp": 0,
+      "eff": 22.035,
+      "formal_pct": 100.0
+    },
+    {
+      "center": "SC24",
+      "people": 853,
+      "person_day": 28.43,
+      "formal": 853,
+      "temp": 0,
+      "eff": 21.543,
+      "formal_pct": 100.0
+    },
+    {
+      "center": "SC25",
+      "people": 11598,
+      "person_day": 386.6,
+      "formal": 1800,
+      "temp": 9798,
+      "eff": 14.783,
+      "formal_pct": 15.52
+    },
+    {
+      "center": "SC26",
+      "people": 772,
+      "person_day": 25.73,
+      "formal": 772,
+      "temp": 0,
+      "eff": 20.185,
+      "formal_pct": 100.0
+    },
+    {
+      "center": "SC27",
+      "people": 646,
+      "person_day": 21.53,
+      "formal": 646,
+      "temp": 0,
+      "eff": 20.262,
+      "formal_pct": 100.0
+    },
+    {
+      "center": "SC28",
+      "people": 205,
+      "person_day": 6.83,
+      "formal": 205,
+      "temp": 0,
+      "eff": 17.343,
+      "formal_pct": 100.0
+    },
+    {
+      "center": "SC29",
+      "people": 1187,
+      "person_day": 39.57,
+      "formal": 1187,
+      "temp": 0,
+      "eff": 20.612,
+      "formal_pct": 100.0
+    },
+    {
+      "center": "SC30",
+      "people": 736,
+      "person_day": 24.53,
+      "formal": 736,
+      "temp": 0,
+      "eff": 20.266,
+      "formal_pct": 100.0
+    },
+    {
+      "center": "SC31",
+      "people": 2025,
+      "person_day": 67.5,
+      "formal": 1318,
+      "temp": 707,
+      "eff": 21.397,
+      "formal_pct": 65.09
+    },
+    {
+      "center": "SC32",
+      "people": 411,
+      "person_day": 13.7,
+      "formal": 411,
+      "temp": 0,
+      "eff": 19.552,
+      "formal_pct": 100.0
+    },
+    {
+      "center": "SC34",
+      "people": 1972,
+      "person_day": 65.73,
+      "formal": 1365,
+      "temp": 607,
+      "eff": 16.693,
+      "formal_pct": 69.22
+    },
+    {
+      "center": "SC35",
+      "people": 6148,
+      "person_day": 204.93,
+      "formal": 1690,
+      "temp": 4458,
+      "eff": 19.227,
+      "formal_pct": 27.49
+    },
+    {
+      "center": "SC36",
+      "people": 147,
+      "person_day": 4.9,
+      "formal": 147,
+      "temp": 0,
+      "eff": 16.519,
+      "formal_pct": 100.0
+    },
+    {
+      "center": "SC37",
+      "people": 197,
+      "person_day": 6.57,
+      "formal": 197,
+      "temp": 0,
+      "eff": 17.992,
+      "formal_pct": 100.0
+    },
+    {
+      "center": "SC38",
+      "people": 844,
+      "person_day": 28.13,
+      "formal": 844,
+      "temp": 0,
+      "eff": 16.634,
+      "formal_pct": 100.0
+    },
+    {
+      "center": "SC39",
+      "people": 450,
+      "person_day": 15.0,
+      "formal": 450,
+      "temp": 0,
+      "eff": 18.093,
+      "formal_pct": 100.0
+    },
+    {
+      "center": "SC40",
+      "people": 622,
+      "person_day": 20.73,
+      "formal": 622,
+      "temp": 0,
+      "eff": 17.579,
+      "formal_pct": 100.0
+    },
+    {
+      "center": "SC41",
+      "people": 312,
+      "person_day": 10.4,
+      "formal": 312,
+      "temp": 0,
+      "eff": 19.279,
+      "formal_pct": 100.0
+    },
+    {
+      "center": "SC43",
+      "people": 520,
+      "person_day": 17.33,
+      "formal": 520,
+      "temp": 0,
+      "eff": 20.666,
+      "formal_pct": 100.0
+    },
+    {
+      "center": "SC44",
+      "people": 3307,
+      "person_day": 110.23,
+      "formal": 954,
+      "temp": 2353,
+      "eff": 18.729,
+      "formal_pct": 28.85
+    },
+    {
+      "center": "SC46",
+      "people": 750,
+      "person_day": 25.0,
+      "formal": 750,
+      "temp": 0,
+      "eff": 13.661,
+      "formal_pct": 100.0
+    },
+    {
+      "center": "SC47",
+      "people": 9291,
+      "person_day": 309.7,
+      "formal": 1800,
+      "temp": 7491,
+      "eff": 17.364,
+      "formal_pct": 19.37
+    },
+    {
+      "center": "SC48",
+      "people": 137,
+      "person_day": 4.57,
+      "formal": 137,
+      "temp": 0,
+      "eff": 16.26,
+      "formal_pct": 100.0
+    },
+    {
+      "center": "SC49",
+      "people": 1125,
+      "person_day": 37.5,
+      "formal": 1125,
+      "temp": 0,
+      "eff": 21.059,
+      "formal_pct": 100.0
+    },
+    {
+      "center": "SC51",
+      "people": 2310,
+      "person_day": 77.0,
+      "formal": 1648,
+      "temp": 662,
+      "eff": 18.442,
+      "formal_pct": 71.34
+    },
+    {
+      "center": "SC52",
+      "people": 559,
+      "person_day": 18.63,
+      "formal": 559,
+      "temp": 0,
+      "eff": 22.028,
+      "formal_pct": 100.0
+    },
+    {
+      "center": "SC53",
+      "people": 6840,
+      "person_day": 228.0,
+      "formal": 1462,
+      "temp": 5378,
+      "eff": 18.479,
+      "formal_pct": 21.37
+    },
+    {
+      "center": "SC54",
+      "people": 1325,
+      "person_day": 44.17,
+      "formal": 1278,
+      "temp": 47,
+      "eff": 22.545,
+      "formal_pct": 96.45
+    },
+    {
+      "center": "SC55",
+      "people": 569,
+      "person_day": 18.97,
+      "formal": 569,
+      "temp": 0,
+      "eff": 20.525,
+      "formal_pct": 100.0
+    },
+    {
+      "center": "SC56",
+      "people": 276,
+      "person_day": 9.2,
+      "formal": 276,
+      "temp": 0,
+      "eff": 20.508,
+      "formal_pct": 100.0
+    },
+    {
+      "center": "SC57",
+      "people": 1602,
+      "person_day": 53.4,
+      "formal": 1602,
+      "temp": 0,
+      "eff": 19.586,
+      "formal_pct": 100.0
+    },
+    {
+      "center": "SC58",
+      "people": 154,
+      "person_day": 5.13,
+      "formal": 154,
+      "temp": 0,
+      "eff": 19.318,
+      "formal_pct": 100.0
+    },
+    {
+      "center": "SC60",
+      "people": 13704,
+      "person_day": 456.8,
+      "formal": 1800,
+      "temp": 11904,
+      "eff": 17.407,
+      "formal_pct": 13.13
+    },
+    {
+      "center": "SC61",
+      "people": 120,
+      "person_day": 4.0,
+      "formal": 120,
+      "temp": 0,
+      "eff": 19.4,
+      "formal_pct": 100.0
+    },
+    {
+      "center": "SC63",
+      "people": 449,
+      "person_day": 14.97,
+      "formal": 449,
+      "temp": 0,
+      "eff": 19.298,
+      "formal_pct": 100.0
+    },
+    {
+      "center": "SC66",
+      "people": 159,
+      "person_day": 5.3,
+      "formal": 159,
+      "temp": 0,
+      "eff": 17.168,
+      "formal_pct": 100.0
+    },
+    {
+      "center": "SC68",
+      "people": 270,
+      "person_day": 9.0,
+      "formal": 270,
+      "temp": 0,
+      "eff": 20.77,
+      "formal_pct": 100.0
+    }
+  ],
+  "max_formal_per_center_day": 60,
+  "min_formal_per_center_day": 2
+}

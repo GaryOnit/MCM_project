@@ -1,0 +1,141 @@
+{
+ "run_all": {
+  "args": [
+   "code/run_all.py",
+   "--only",
+   "common,backtest,p1_daily,p1_hourly,p2_adjust,validate"
+  ],
+  "ok": true,
+  "seconds": 11.0,
+  "stderr_tail": ""
+ },
+ "p3_staffing": {
+  "args": [
+   "code/p3_staffing.py",
+   "--source",
+   "pred"
+  ],
+  "ok": true,
+  "seconds": 9.8,
+  "stderr_tail": ""
+ },
+ "p4_roster": {
+  "args": [
+   "code/p4_roster.py"
+  ],
+  "ok": true,
+  "seconds": 1.2,
+  "stderr_tail": ""
+ },
+ "validate_schedule": {
+  "args": [
+   "code/validate_schedule.py"
+  ],
+  "ok": true,
+  "seconds": 0.4,
+  "stderr_tail": ""
+ },
+ "compare": {
+  "1": {
+   "rows_new": 1710,
+   "提交": {
+    "rows": 1710,
+    "same_md5": true,
+    "same_cells": true,
+    "diff_rows": 0
+   },
+   "结果": {
+    "rows": 1710,
+    "same_md5": true,
+    "same_cells": true,
+    "diff_rows": 0
+   }
+  },
+  "2": {
+   "rows_new": 41040,
+   "提交": {
+    "rows": 41040,
+    "same_md5": true,
+    "same_cells": true,
+    "diff_rows": 0
+   },
+   "结果": {
+    "rows": 41040,
+    "same_md5": true,
+    "same_cells": true,
+    "diff_rows": 0
+   }
+  },
+  "3": {
+   "rows_new": 1710,
+   "提交": {
+    "rows": 1710,
+    "same_md5": true,
+    "same_cells": true,
+    "diff_rows": 0
+   },
+   "结果": {
+    "rows": 1710,
+    "same_md5": true,
+    "same_cells": true,
+    "diff_rows": 0
+   }
+  },
+  "4": {
+   "rows_new": 41040,
+   "提交": {
+    "rows": 41040,
+    "same_md5": true,
+    "same_cells": true,
+    "diff_rows": 0
+   },
+   "结果": {
+    "rows": 41040,
+    "same_md5": true,
+    "same_cells": true,
+    "diff_rows": 0
+   }
+  },
+  "5": {
+   "rows_new": 10260,
+   "提交": {
+    "rows": 10260,
+    "same_md5": true,
+    "same_cells": true,
+    "diff_rows": 0
+   },
+   "结果": {
+    "rows": 10260,
+    "same_md5": true,
+    "same_cells": true,
+    "diff_rows": 0
+   }
+  },
+  "6": {
+   "rows_new": 11491,
+   "提交": {
+    "rows": 11491,
+    "same_md5": true,
+    "same_cells": true,
+    "diff_rows": 0
+   },
+   "结果": {
+    "rows": 11491,
+    "same_md5": true,
+    "same_cells": true,
+    "diff_rows": 0
+   }
+  }
+ },
+ "static": {
+  "abs_paths": [
+   "build_paper_p1.py:12: C:\\\\Users\\\\CloudStar\\\\.dsh\\\\dsh-runtimes\\\\dsh-primary-runtime\\\\",
+   "make_fig1415.py:35: for path in (r'C:\\Windows\\Fonts\\simhei.ttf', r'C:\\Windows\\Fonts\\msyh.ttc'):",
+   "make_flow_fig.py:32: r'C:\\Windows\\Fonts\\simhei.ttf',",
+   "make_flow_fig.py:33: r'C:\\Windows\\Fonts\\msyh.ttc',",
+   "make_flow_fig.py:34: r'C:\\Windows\\Fonts\\simsun.ttc',",
+   "numbers_final.py:11: ROOT = r'D:\\code\\项目\\2024年MathorCup数学应用挑战赛赛题C：物流网络分拣中心货'"
+  ],
+  "vendor": []
+ }
+}

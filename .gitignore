@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# 临时/中间产物
+.dsh-office-*/
+*.tmp
+*.bak
+_probe.tmp
+
+# 程序输出镜像（与 结果/结果/ 逐字节一致，避免重复入库）
+提交/
+
+# 编辑器
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini

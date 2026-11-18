@@ -1,0 +1,88 @@
+# F. 从零复现（隔离副本）
+解释器：C:\Users\CloudStar\.dsh\dsh-runtimes\dsh-primary-runtime\dependencies\python\python.exe
+工作目录：D:\code\项目\2024年MathorCup数学应用挑战赛赛题C：物流网络分拣中心货
+[repro] 隔离目录：D:\code\项目\2024年MathorCup数学应用挑战赛赛题C：物流网络分拣中心货\复核\_work\repro
+
+=== run_all  (code/run_all.py --only common,backtest,p1_daily,p1_hourly,p2_adjust,validate)  exit=0  11.0s
+--- stdout tail ---
+data/backtest_results.csv     OK
+data/hourly_backtest.csv      OK
+data/factor_table.csv         OK
+data/line_changes.csv         OK
+data/pred_daily.csv           OK
+data/pred_hourly.csv          OK
+结果表目录  ：D:\code\项目\2024年MathorCup数学应用挑战赛赛题C：物流网络分拣中心货\复核\_work\repro\结果\结果
+  结果表1.csv  OK
+  结果表2.csv  OK
+  结果表3.csv  OK
+  结果表4.csv  OK
+论文配图    ：0 张（论文/figs/）
+
+=== p3_staffing  (code/p3_staffing.py --source pred)  exit=0  9.8s
+--- stdout tail ---
+  SC63  完成（55/57）
+  SC66  完成（56/57）
+  SC68  完成（57/57）
+  全部 1710 个 (中心, 日) 通过产能校验
+[3] 汇总统计
+  总人天数 116925（正式工 53543 = 45.79%，临时工 63382 = 54.21%）
+  日均 3897.50 人，人天数下界（该口径工时下界）103258（gap 13.236%）
+  人效 22.802 包裹/(人·小时)（日间标准差 2.753；折合 175.2 包裹/人天），小时利用率 0.954±0.079
+  正式工上限起作用的 (中心,日)：490 / 1710；日末积压未清空的最大值 0.00
+  附加物理校验（剩余产能≥剩余到货）未通过的中心·日：0
+  已写出 结果\结果\结果表5.csv（10260 行，gbk）
+  统计已写出 data\p3_stats.json
+
+=== p4_roster  (code/p4_roster.py)  exit=0  1.2s
+--- stdout tail ---
+  正式工可用人天 = min(Σ T, 200×25) = 5000；每人配额 25 天（出勤率 83.33%）
+  每天正式工出勤 164 ~ 170 人；临时工人天 6491
+[3] 生成表 6 明细
+[4] 独立校验
+[校验] 表 6：11491 行（正式工 5000 + 临时工 6491）
+       正式工出勤天数 min/mean/max = 25 / 25.000 / 25（出勤率 83.33% ~ 83.33%），标准差 0.0000
+       ✓ 全部约束通过（出勤率 ≤85%、连续 ≤7 天、每人每日 ≤1 班、每班人数 = 表 5、正式工 ≥ 表 5 正式工）
+[5] 写出结果表 6
+  已写出 结果\结果\结果表6.csv（11491 行，gbk）
+  统计已写出 data\p4_stats.json
+  人天数：总 11491 = 正式工 5000（43.51%）+ 临时工 6491（56.49%）
+  正式工出勤率：83.33%（200 人完全一致），连续出勤 ≤ 7 天，临时工高峰日 2023/12/28（236 人）
+
+=== validate_schedule  (code/validate_schedule.py)  exit=0  0.4s
+--- stdout tail ---
+  行数 = 表 5 中 SC60 总人天数 = 11491 ✓
+  正式工 200 人，出勤人天 5000；临时工 236 个编号，人天 6491
+  正式工出勤天数 min/mean/max = 25 / 25.000 / 25；出勤率 83.33% ~ 83.33%（上限 85%）
+  出勤率标准差 0.0000（越小越均衡）
+  临时工高峰日 2023/12/28（236 人）
+
+==============================================================================
+校验结论
+==============================================================================
+✓ 表 5 与表 6 全部校验通过
+  表 5：10260 行 / 57 中心 / 总人天数 116925（正式工 53543，临时工 63382）
+  表 6：11491 行 / 正式工 5000 人天 / 临时工 6491 人天 / 出勤率 83.33%~83.33%
+
+# 结果表对比（隔离副本 vs 交付目录 提交/ 与 结果/结果/）
+  表1 vs 提交   行数 1710 vs 1710；md5同=True；逐格同=True；差异行=0
+  表1 vs 结果   行数 1710 vs 1710；md5同=True；逐格同=True；差异行=0
+  表2 vs 提交   行数 41040 vs 41040；md5同=True；逐格同=True；差异行=0
+  表2 vs 结果   行数 41040 vs 41040；md5同=True；逐格同=True；差异行=0
+  表3 vs 提交   行数 1710 vs 1710；md5同=True；逐格同=True；差异行=0
+  表3 vs 结果   行数 1710 vs 1710；md5同=True；逐格同=True；差异行=0
+  表4 vs 提交   行数 41040 vs 41040；md5同=True；逐格同=True；差异行=0
+  表4 vs 结果   行数 41040 vs 41040；md5同=True；逐格同=True；差异行=0
+  表5 vs 提交   行数 10260 vs 10260；md5同=True；逐格同=True；差异行=0
+  表5 vs 结果   行数 10260 vs 10260；md5同=True；逐格同=True；差异行=0
+  表6 vs 提交   行数 11491 vs 11491；md5同=True；逐格同=True；差异行=0
+  表6 vs 结果   行数 11491 vs 11491；md5同=True；逐格同=True；差异行=0
+
+# F18 静态检查
+  硬编码绝对路径：6 处
+    build_paper_p1.py:12: C:\\Users\\CloudStar\\.dsh\\dsh-runtimes\\dsh-primary-runtime\\
+    make_fig1415.py:35: for path in (r'C:\Windows\Fonts\simhei.ttf', r'C:\Windows\Fonts\msyh.ttc'):
+    make_flow_fig.py:32: r'C:\Windows\Fonts\simhei.ttf',
+    make_flow_fig.py:33: r'C:\Windows\Fonts\msyh.ttc',
+    make_flow_fig.py:34: r'C:\Windows\Fonts\simsun.ttc',
+    numbers_final.py:11: ROOT = r'D:\code\项目\2024年MathorCup数学应用挑战赛赛题C：物流网络分拣中心货'
+  _vendor 依赖：0 处

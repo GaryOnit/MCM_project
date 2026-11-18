@@ -1,0 +1,93 @@
+{
+ "run_all": {
+  "args": [
+   "code/run_all.py",
+   "--only",
+   "common,backtest,p1_daily,p1_hourly,p2_adjust,validate"
+  ],
+  "ok": true,
+  "seconds": 11.5,
+  "stderr_tail": ""
+ },
+ "p3_staffing": {
+  "args": [
+   "code/p3_staffing.py",
+   "--source",
+   "pred"
+  ],
+  "ok": true,
+  "seconds": 13.5,
+  "stderr_tail": ""
+ },
+ "p4_roster": {
+  "args": [
+   "code/p4_roster.py"
+  ],
+  "ok": true,
+  "seconds": 1.2,
+  "stderr_tail": ""
+ },
+ "validate_schedule": {
+  "args": [
+   "code/validate_schedule.py"
+  ],
+  "ok": true,
+  "seconds": 0.4,
+  "stderr_tail": ""
+ },
+ "compare": {
+  "1": {
+   "rows_new": 1710,
+   "rows_deliv": 1710,
+   "same_cells": false,
+   "same_md5": false,
+   "diff_rows": 1639
+  },
+  "2": {
+   "rows_new": 41040,
+   "rows_deliv": 41040,
+   "same_cells": false,
+   "same_md5": false,
+   "diff_rows": 24251
+  },
+  "3": {
+   "rows_new": 1710,
+   "rows_deliv": 1710,
+   "same_cells": false,
+   "same_md5": false,
+   "diff_rows": 1653
+  },
+  "4": {
+   "rows_new": 41040,
+   "rows_deliv": 41040,
+   "same_cells": false,
+   "same_md5": false,
+   "diff_rows": 24266
+  },
+  "5": {
+   "rows_new": 10260,
+   "rows_deliv": 10260,
+   "same_cells": false,
+   "same_md5": false,
+   "diff_rows": 2283
+  },
+  "6": {
+   "rows_new": 11491,
+   "rows_deliv": 11125,
+   "same_cells": false,
+   "same_md5": false,
+   "diff_rows": -1
+  }
+ },
+ "static": {
+  "abs_paths": [
+   "build_paper_p1.py:12: C:\\\\Users\\\\CloudStar\\\\.dsh\\\\dsh-runtimes\\\\dsh-primary-runtime\\\\",
+   "make_fig1415.py:35: for path in (r'C:\\Windows\\Fonts\\simhei.ttf', r'C:\\Windows\\Fonts\\msyh.ttc'):",
+   "make_flow_fig.py:32: r'C:\\Windows\\Fonts\\simhei.ttf',",
+   "make_flow_fig.py:33: r'C:\\Windows\\Fonts\\msyh.ttc',",
+   "make_flow_fig.py:34: r'C:\\Windows\\Fonts\\simsun.ttc',",
+   "numbers_final.py:11: ROOT = r'D:\\code\\项目\\2024年MathorCup数学应用挑战赛赛题C：物流网络分拣中心货'"
+  ],
+  "vendor": []
+ }
+}
