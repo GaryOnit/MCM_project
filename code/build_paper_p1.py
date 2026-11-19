@@ -213,7 +213,7 @@ def cover(B):
     for _ in range(2):
         B.blank()
 
-    B.p('参赛队员与分工', indent=False, align='center', size=12, bold=True,
+    B.p('组员与分工', indent=False, align='center', size=12, bold=True,
         cn=CN_HEAD, en=CN_HEAD, space_after=6)
     B.table(
         None,
